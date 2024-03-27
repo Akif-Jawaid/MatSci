@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> Journal of Material Science Express </title>
+<link rel="shortcut icon" href="#" type="image/png">
+<link rel="shortcut icon" type="image/png" href="./Images/logo11.png" />
+
+
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+<link href="./style.css" rel="stylesheet" type="text/css">
+
+
+
+
+<style type="text/css">
+
+#rightcolumn{
+float:left;
+width:434px;
+min-height: 0px;
+}
+/*margin-left: 10px;
+padding: 5px;
+border: 3px solid black;
+padding-bottom: 8px;*/
+
+.style3 {
+	font-family:Arial;
+	text-decoration:none;
+	font-weight:normal;
+	line-height:20px;
+	font-size: 12px;
+}
+
+
+        
+        
+  
+.eachitem{
+    color: #01B0F1;
+    font-size: 22px;
+cursor:pointer;
+    }
+	
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+    
+  function calltoajax(year)
+  {
+$.ajax({
+        "type": "POST",
+        "url": "#p",
+        "data": {
+         	 "year": year
+			
+        },
+        success: function (data) {
+      // console.log('after getting from db'+data);
+       $('#volissue').html(data.trim());
+ 
+        }
+      });  
+  }    
+</script>
+</head>
+
+<body background="./Images/bg.gif" style="background-repeat:repeat-x;" bgcolor="#E1E4DB">
+<div align="center">
+  <table width="980" border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td><link href="style.css" rel="stylesheet" type="text/css">
+<div align="center">
+  <table width="980" border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td width="800" height="116" align="left">
+          <img style="padding-left:0px;" src="./Images/MatSci Express.png" width="720" height="140" />
+      
+      </td>
+     
+      <td width="250" align="right" valign="middle">
+          
+         
+          
+          
+          <img src="./Images/logo2.png" width="250" height="140" />
+<div style="margin-top:-45px;"><form role="search" method="get" id="searchform" class="searchform" action="./index.html">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div>
+ </td>
+    </tr>
+    <tr>
+      <td colspan="2" valign="top"><img style="margin-top:10px;" src="./Images/Menu1.gif" width="953" height="36" border="0" usemap="#Map"></td>
+    </tr>
+    <tr>
+      <td height="11" colspan="2" valign="top"></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center" valign="top"><img src="./Images/ik.jpg" width="942" height="164"></td>
+    </tr>
+    <tr>
+      <td height="10" colspan="2" valign="top"></td>
+    </tr>
+  </tbody></table>
+</div>
+<map name="Map" id="Map">
+<area id="journal" shape="rect" coords="95,10,160,28" href="./aboutMSE.html">
+<area id="submitmenuscript" shape="rect" coords="205,9,342,27" href="#">
+<area id="forauthor" shape="rect" coords="390,9,481,27" href="#">
+<area id="publications" shape="rect" coords="538,9,670,27" href="#">
+<area id="contactus" shape="rect" coords="725,9,805,27" href="#">
+<area id="home" shape="rect" coords="27,5,57,32" href="./index.html">
+</map></td>
+    </tr><tr>
+      <td align="center"><table width="942" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+          <td align="left"><img src="./Images/whitetop.gif" width="942" height="14"></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" background="./Images/whitemiddle.gif" style="background-repeat:repeat-y;"><table width="942" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td width="230" align="left" valign="top" class="borderright"><link href="css/style.css" rel="stylesheet" type="text/css">
+<table width="229" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="229" align="center"><div align="center"><img src="./Images/matsciblogo.jpg" width="185" height="215"></div></td>
+  </tr>
+  <tr>
+    <td align="center" height="7"></td>
+  </tr>
+  <tr>
+    <td align="center" class="normaltext"></td>
+  </tr>
+  <tr>
+    <td align="center" class="normaltext">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" class="normaltext"><link href="css/style.css" rel="stylesheet" type="text/css">
+
+            <table width="230" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <td colspan="4"></td>
+                                </tr>
+                                <tr>
+                                  <td width="15"></td>
+                                  <td colspan="2" align="left" valign="top" class="blackheadnormal"><div style="padding-left:25px;"><strong>Archive</strong></div></td>
+                                  <td width="15"></td>
+                                </tr>
+                                <tr>
+                                  <td></td>
+                                  <td height="15" colspan="2"></td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                  <td></td>
+                                  <td width="15" height="30" align="left" valign="top" class="blackheadmiddle">&nbsp;</td>
+                                  <td width="185" height="25" align="left" valign="middle"><table width="185" border="0" cellpadding="1" cellspacing="2" class="aa11">
+                                      <tbody>
+                                        <tr>
+                                          <td width="179" valign="top" class="normaltextunderline"><style>
+.collapsible {
+  background-color: #4baece;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+  width: 100%;
+  border: 1px solid;
+  text-align: left;
+  outline: none;
+  font-size: 13px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+  margin-right: 12px;
+
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content1 {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  width:190px;
+  color:#000;
+}
+</style>
+                                            <style>
+ a {
+  color:#000;
+ }
+ a:hover,a:focus{
+	 color:#026BA6;
+	 }
+
+ </style>
+                                                                                        <button class="collapsible">2024</button>
+                                              <div class="content1">
+                                                                                                                                    
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> Online First,&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                            	 </div>
+                                             <button class="collapsible">2023</button>
+                                              <div class="content1">
+                                                                                                                                    
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2023(1),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2023(2),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2023(3),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2023(4),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2024(1),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> Online First,&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                            	 </div>
+                                             <button class="collapsible">2022</button>
+                                              <div class="content1">
+                                                                                                                                    
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2022 (1),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2022(2),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2022(3),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2022(4),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                            	 </div>
+                                             <button class="collapsible">2021</button>
+                                              <div class="content1">
+                                                                                                                                    
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2021(1),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2021(2),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#1"> 2021 (3),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2021(4),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2022(2),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2022(3),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                            	 </div>
+                                             <button class="collapsible">2020</button>
+                                              <div class="content1">
+                                                                                                                                    
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> Volume 8, Issue 1,&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> Volume 8, Issue 2,&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> Volume 8, Issue 3,&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> Volume 8, Issue 4,&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> 2021(1),&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                            	 </div>
+                                             <button class="collapsible">2019</button>
+                                              <div class="content1">
+                                                                                                                                    
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> Volume 6, Issue 4,&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> Volume 7, Issue 1,&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> Volume 7, Issue 2,&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> Volume 7, Issue 3,&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> Volume 7,&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                                                                        
+                                                                                            <a style="text-decoration:none; font-weight:bold;  font-size:12px; color:#333;" href="#"> Volume 7, Issue 4,&nbsp;&nbsp;
+                                                                                            </a>
+                                              <br />
+                                              
+                                            	 </div>
+                                             <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                      
+                                      
+                                      </td>
+                                  <td></td>
+                                </tr>
+                                <tr>
+                                   <td height="15" colspan="4">
+                                        <div style="width:240px; text-align:center;">
+ 
+<a href="#" style="text-decoration:none;color:#505050">
+<div style="height:100px;width:230px;font-family:Arial, Verdana, helvetica, sans-serif;background-color:#ffffff;display:inline-block">
+<div style="padding: 0px 16px;">
+<div style="padding-top:3px;line-height:1;">
+<div style="float:left;font-size:28px"><span id="citescoreVal" style="letter-spacing: -2px;display: inline-block;padding-top: 7px;line-height: .75;">2.1</span></div>
+<div style="float:right;font-size:14px;padding-top:3px;text-align: right;"><span id="citescoreYearVal" style="display:block;">2022</span>CiteScore</div>
+</div>
+<div style="clear:both;"></div>
+<div style="padding-top:3px;">
+<div style="height:4px;background-color:#DCDCDC;">
+<div style="height:4px;background-color:#007398;" id="percentActBar">&nbsp;</div>
+</div>
+<div style="font-size:11px;"><span id="citescorePerVal">58th percentile</span></div>
+</div>
+<div style="font-size:12px;text-align:right;">Powered by &nbsp;<span><img alt="Scopus" style="width:50px;height:15px;" src="./Images/logo/2.jpg"></span></div>
+</div>
+</div>
+</a>
+
+<a href="#" title="SCImago Journal &amp; Country Rank">
+    <img border="0" src="#" height="210" width="220" alt="SCImago Journal &amp; Country Rank"  />
+    </a>
+</div>
+</div>
+</a>
+</div>
+
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table></td>
+  </tr>
+</tbody></table></td>
+              <td width="465" align="left" valign="top"><div align="left" style="padding-left:15px; padding-right:15px;">
+                <table width="434" border="0" cellspacing="0" cellpadding="0">
+                  <tbody><tr>
+                    <td height="12" colspan="3">
+
+                      <table width="432" height="168" border="0">
+                                <tr>
+                                  <td colspan="3" class="borderbottomdoted"><span class="blackhead">Quick Links </span></td>
+                                </tr>
+                                <tr>
+                                  <td width="202"><span class="normaltextunderline"><img src="./Images/arrow.gif" width="6" height="5" style="padding-bottom:3px; padding-right:5px;" /><a href="./aboutMSE.html" style="color:#000000"> About the Journal</a></span></td>
+                                  <td width="214"><span class="normaltextunderline"><img src="./Images/arrow.gif" width="6" height="5" style="padding-bottom:3px; padding-right:5px;" /><a href="./Editorial-board.html" style="color:#000000"> Editorial board</a></span></td>
+                                </tr>
+                                <tr>
+                                  <td><span class="normaltextunderline"><img src="./Images/arrow.gif" width="6" height="5" style="padding-bottom:3px; padding-right:5px;" /><a href="#" style="color:#000000"> Current issue</a></span></td>
+                                  <td><span class="normaltextunderline"><img src="./Images/arrow.gif" width="6" height="5" style="padding-bottom:3px; padding-right:5px;" /><a href="#" style="color:#000000"> Archives</a></span></td>
+                                </tr><tr>
+                                    <td><span class="normaltextunderline"> <img src="./Images/arrow.gif" width="6" height="5" style="padding-bottom:3px; padding-right:5px;" /> <a href="./GFA.html" style="color:#000000"> Guide for Authors</a></span></td>
+                                  <td><span class="normaltextunderline"><img src="./Images/arrow.gif" width="6" height="5" style="padding-bottom:3px; padding-right:5px;" />&nbsp;<a href="#" style="color:#000000">Submit manuscript</a></span></td>
+                                </tr>
+                                <tr>
+
+                                  
+                                  <td><span class="normaltextunderline"><img src="./Images/arrow.gif" width="6" height="5" style="padding-bottom:3px; padding-right:5px;" /><a href="#" style="color:#000000"> Abstracting and Indexing</a></span></td>
+                                </tr>
+                                <tr>
+
+                                  <td><span class="normaltextunderline"><img src="./Images/arrow.gif" width="6" height="5" style="padding-bottom:3px; padding-right:5px;" /><a href="#" style="color:#000000"> Policies</a></span></td>
+                                </tr>
+                              </table></td>
+                  </tr>
+				  <tr>
+                    <td colspan="3" class="borderbottomdoted">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="borderbottomdoted"><span class="blackhead"> 					Editorial Board                    </span></td>
+                  </tr>
+                  <tr>
+                    <td height="12" colspan="3"></td>
+                  </tr>
+
+
+                </tbody></table>
+              </div>
+  <div style="padding-left:10px;">
+        
+                <div class="normaltext">
+				<p><span style="color: #0000ff;"><strong>Editor-in-Chief</strong></span></p>
+<p>Prof. Sotirios Baskoutas </p>
+<p>Department of Materials Science
+<p>University of Patras, Greece</p>
+<p>Email: bask@upatras.gr</p>
+<p>&nbsp;</p>
+<p><span style="color: #0000ff;"><strong>Editors</strong></span></p>
+<p>Cccccccc
+    Ccccc
+    Cccc
+    Cccc
+    Cccc
+    Cccc
+    </p>
+<p>&nbsp;</p>
+<p><strong><span style="color: #0000ff;">Editorial Board Members</span><br />
+</strong></p>
+<p>Cccccccc
+    Ccccc
+    Cccc
+    Cccc
+    Cccc
+    Cccc
+    </p>
+
+<p><strong><span style="color: #0000ff;">Editorial Manager</span><br />
+</strong></p>
+<p></p>
+
+<p>&nbsp;</p>
+<p><span style="color: #0000ff;"><strong>Board Members</strong></span></p>
+
+<p>&nbsp;</p>
+                </div>
+
+							    </div>
+              </td>
+              <td width="247" align="right" valign="top"><link href="css/style.css" rel="stylesheet" type="text/css">
+                <table border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                        <tr><td align="left"><div align="center"><img src="./Images/logo/1.jpg" width="200" height="150" /></div></td>
+                        </tr>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                        <tr>
+                          <td align="left"><div align="center"><img src="./Images/logo/2.jpg" width="183" height="46" /></div></td>
+                        </tr>
+                        <tr>
+                          <td align="left"><div align="center"><img src="./Images/logo/3.bmp" width="178" height="110" /></div></td>
+                        </tr>
+                        <tr>
+                          <td align="left"><div align="center"><img src="./Images/logo/4.jpg" width="120" height="125" /></div></td>
+                        </tr>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                        <tr>
+                          <td align="left"><div align="center"><img src="./Images/logo/5.jpg" width="190" height="34" /></div></td>
+                        </tr>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                        <tr>
+                          <td align="left"><div align="center"><img src="./Images/logo/6.png" width="190" height="40" /></div></td>
+                        </tr>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                        <tr>
+                          <td align="left"><div align="center"><img src="./Images/logo/10.jpeg" width="190" height="70" /></div></td>
+                        </tr>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                        <tr>
+                          <td align="left"><div align="center"><img src="./Images/logo/8.png" width="190" height="40" /></div></td>
+                        </tr>
+                         <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                        <tr>
+                <td align="left"><div align="center"><img src="./Images/logo/9.png" width="190" height="70" /></div></td>
+                        </tr>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+
+                       <tr>
+                <td align="left"><div align="center"><img src="./Images/logo/10.jpg" width="190" height="70" /></div></td>
+                        </tr>
+                        <tr>
+                          <td width="434" height="12"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+                </td>
+            </tr>
+          </tbody></table>            </td>
+        </tr>
+        <tr>
+          <td align="left"><img src="./Images/whitebottom.gif" width="942" height="14"></td>
+        </tr>
+      </tbody></table></td>
+    </tr>
+
+   <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="left" class="normaltext" style="padding-left:50px;">
+        <div align="left">
+         
+         <table style="width:96%;">
+             <tr><td> <div>Journal of Material Science Express&nbsp;&nbsp;</div>  </td>
+             <td><div style="text-align:right;"> Journal of Material Science Express</span>is licensed under </div</td>
+             </tr>
+              <tr><td style="vertical-align:top;"> <div align="left"  >
+                  <a style="text-decoration:none;font-weight:bold; font-size:13px;" href="#"> Terms & Conditions</a>
+     <a style="text-decoration:none;margin-left:50px;font-weight:bold; font-size:13px;" href="#"> FAQs</a> <br />
+      <a style="text-decoration:none;margin-left:2px;font-weight:bold; font-size:13px;" href="#"> Privacy Policy</a>
+     </div></td>
+             <td><div style="text-align:right;"><a  href="https://creativecommons.org/licenses/by/4.0/"><img src="./Images/CCBY4.0.png" width="200" height="90" /></a></div></td>
+             </tr>
+             
+            
+             
+         </table>
+            
+         
+            
+           <br />
+        </div>
+      </div>
+    
+     <div align="left" class="normaltext" style="padding-left:50px;"></div>
+      </td>
+    </tr>
+	
+	<tr>
+      <td><div align="left" class="normaltext" style="padding-right:50px;">
+        <div align="right">
+            <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
+          <span class="style3"><a class="normaltext" style="text-decoration:none;color: #3E3E3E;" href="https://creativecommons.org/licenses/by/4.0/"></a></span>
+          <span class="normaltext">.</span></div>
+      </div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+
+<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function() {
+			var if_ssb_exist = document.getElementsByClassName( "simplesocialbuttons" ).length > 0;
+			if (if_ssb_exist) {
+				var ssb_admin_ajax = '#';
+				var ssb_post_id = 4 ;
+				var ssb_post_url = '#';
+				var ssb_alternate_post_url = '#';
+				jQuery( document ).ready(function(){
+				var is_ssb_used = jQuery('.simplesocialbuttons');
+				if( is_ssb_used ) {
+
+					var data = {
+					'action': 'ssb_fetch_data',
+					'postID': ssb_post_id
+				};
+					jQuery.post(ssb_admin_ajax, data, function(data, textStatus, xhr) {
+						var array = JSON.parse(data);
+						jQuery.each( array, function( index, value ){
+
+							if( index == 'total' ){
+								jQuery('.ssb_'+ index +'_counter').html(value + '<span>Shares</span>');
+							}else{
+								jQuery('.ssb_'+ index +'_counter').html(value);
+							}
+						});
+
+					});
+				}
+				})
+
+			//ssbPlugin.fetchFacebookShares();
+			}
+		});
+
+		</script><script type='text/javascript'>function initTwitCount(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://static1.twitcount.com/js/twitcount.js';fjs.parentNode.insertBefore(js,fjs)}}
+        var ssb_twit_count_init=!1;addEventListener('mouseover',function(event){if(!ssb_twit_count_init){initTwitCount(document,'script','twitcount_plugins')
+        ssb_twit_count_init=!0}})</script></body></html>

@@ -1,0 +1,461 @@
+/*
+Theme Name: Twenty Twelve
+Theme URI: http://wordpress.org/extend/themes/twentytwelve
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background.
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: twentytwelve
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* =Notes
+--------------------------------------------------------------
+This stylesheet uses rem values with a pixel fallback. The rem
+values (and line heights) are calculated using two variables:
+
+$rembase:     14;
+$line-height: 24;
+
+---------- Examples
+
+* Use a pixel value with a rem fallback for font-size, padding, margins, etc.
+	padding: 5px 0;
+	padding: 0.357142857rem 0; (5 / $rembase)
+
+* Set a font-size and then set a line-height based on the font-size
+	font-size: 16px
+	font-size: 1.142857143rem; (16 / $rembase)
+	line-height: 1.5; ($line-height / 16)
+
+---------- Vertical spacing
+
+Vertical spacing between most elements should use 24px or 48px
+to maintain vertical rhythm:
+
+.my-new-div {
+	margin: 24px 0;
+	margin: 1.714285714rem 0; ( 24 / $rembase )
+}
+
+---------- Further reading
+
+http://snook.ca/archives/html_and_css/font-size-with-rem
+http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
+
+
+/* =Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	
+}
+
+/*custom css added by admin*/
+
+.textbox{
+font-size:11px;
+font-family:Arial;
+width:150px;
+height:12px;
+border:solid 1px #FFFFFF;
+}
+.redhead{
+font-size:18px;
+font-family:Arial;
+color:#ED490A;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+.redheadsma{
+font-size:13px;
+font-family:Arial;
+color:#ED490A;
+text-decoration:none;
+font-weight:bold;
+
+}
+.redheadsmaundeline{
+font-size:13px;
+font-family:Arial;
+color:#ED490A;
+text-decoration:none;
+font-weight:bold;
+border-bottom:dotted 1px #E2E2E2;
+padding-bottom:3px;
+
+}
+
+.blackhead{
+font-size:18px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+.blackheadnormal{
+font-size:16px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:normal;
+border-bottom:dashed 1px #E2E2E2;
+padding-bottom:15px; 
+}
+.blackheadmiddle{
+font-size:12px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:bold;
+
+}
+.normaltext{
+	font-size:12px;
+	font-family:Arial;
+	color:#3E3E3E;
+	text-decoration:none;
+	font-weight:normal;
+	line-height:20px;
+
+}
+
+.bluelink{
+font-size:12px;
+font-family:Arial;
+color:#00499A;
+text-decoration:none;
+font-weight:normal;
+
+}
+.bluelink:hover{
+font-size:12px;
+font-family:Arial;
+color:#00499A;
+text-decoration:none;
+font-weight:normal;
+
+}
+.bluelink:visited{
+font-size:12px;
+font-family:Arial;
+color:#00499A;
+text-decoration:none;
+font-weight:normal;
+
+}
+
+
+
+.redlink{
+font-size:11px;
+font-family:Arial;
+color:#ED490A;
+text-decoration:none;
+font-weight:normal;
+
+}
+.redlink:hover{
+font-size:11px;
+font-family:Arial;
+color:#ED490A;
+text-decoration:none;
+font-weight:normal;
+
+}
+.redlink:visited{
+font-size:11px;
+font-family:Arial;
+color:#ED490A;
+text-decoration:none;
+font-weight:normal;
+
+}
+
+
+.normaltextunderline{
+font-size:12px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:normal;
+line-height:18px;
+border-bottom:dotted 1px #C4C4C4;
+
+}
+
+
+.borderright{
+border-right:solid 1px #E2E2E2;}
+.borderbottom{
+border-bottom:solid 1px #E2E2E2;}
+.bordertopbottom{
+border-bottom:solid 1px #E2E2E2;
+border-top:solid 1px #E2E2E2;
+font-size:12px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:normal;
+line-height:18px;
+
+}
+
+.borderbottomdoted{
+border-bottom:dotted 1px #C4C4C4;
+padding-bottom:5px;
+}
+a{
+font-size:12px;
+font-family:Arial;
+color:#0000ff;
+text-decoration:none;
+font-weight:normal;
+line-height:18px;
+
+}
+a:hover{
+font-size:12px;
+font-family:Arial;
+color:#EE0000;
+text-decoration:none;
+font-weight:normal;
+line-height:18px;
+
+}
+a:visited{
+font-size:12px;
+font-family:Arial;
+color:#0000ff;
+text-decoration:none;
+font-weight:normal;
+line-height:18px;
+
+}
+.newsdatedark {
+	font-family: Verdana;
+	font-size: 11px;	
+	line-height:15px;
+	color:#919395;
+	TEXT-DECORATION: none;
+}
+.blackheadsmal{
+font-size:16px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:bold;
+
+}
+.textfieldz {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	border: 1px solid #FFFFFF;
+	background-color: #FFFFFF;
+
+}
+.buttonz {
+	background-image: url(images/button.gif);
+	height: 40px;
+	width: 141px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	border: 0px solid #FFFFFF;
+	background-color: #FFFFFF;
+	cursor:pointer;
+}
+.listfieldz {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	border: 1px solid #FFFFFF;
+	background-color: #FFFFFF;
+	width: 200px;
+
+}
+
+.redlink1{
+font-size:12px;
+font-family:Arial;
+color:#ED490A;
+text-decoration:none;
+font-weight:normal;
+
+}
+.redlink1:hover{
+font-size:12px;
+font-family:Arial;
+color:#ED490A;
+text-decoration:none;
+font-weight:normal;
+
+}
+.redlink1:visited{
+font-size:12px;
+font-family:Arial;
+color:#ED490A;
+text-decoration:none;
+font-weight:normal;
+
+}
+.errormessage {
+	font-family: Arial;
+	font-size: 12px;
+	line-height:15px;
+	color:#FF5E5E;
+	TEXT-DECORATION: none;
+}
+.normaltextsmall{
+font-size:11px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:normal;
+line-height:18px;
+
+}
+.bluetextsmall{
+font-size:10px;
+font-family:Verdana;
+color:#003399;
+text-decoration:none;
+font-weight:normal;
+
+}
+.bluetextquots{
+font-size:11px;
+font-family:Verdana;
+color:#003399;
+text-decoration:none;
+font-weight:bold;
+font-style:italic;
+line-height:23px;
+
+}
+
+.bordertop{
+border-top:dotted 1px #E2E2E2;
+}
+.bordertopsolid{
+border-top:solid 1px #E2E2E2;
+}
+.borderbottomsolid{
+border-bottom:solid 1px #E2E2E2;
+}
+.normaltextlink{
+font-size:12px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:normal;
+line-height:18px;
+border-bottom:solid 1px #E2E2E2;
+
+}
+
+.normaltextlink:hover{
+font-size:12px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:normal;
+line-height:18px;
+border-bottom:solid 1px #E2E2E2;
+
+
+}
+.normaltextlink:visited{
+font-size:12px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:normal;
+line-height:18px;
+border-bottom:solid 1px #E2E2E2;
+
+
+}
+.list{
+font-size:12px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:normal;
+line-height:18px;
+
+}
+.list:hover{
+font-size:12px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:normal;
+line-height:18px;
+
+}
+.list:visited{
+font-size:12px;
+font-family:Arial;
+color:#3E3E3E;
+text-decoration:none;
+font-weight:normal;
+line-height:18px;
+
+}
+#accordian {
+margin:40px auto;
+width:300px;
+background:#fff;
+border:1px solid #000;
+border-radius:6px;
+padding:20px 25px 15px;
+box-shadow:0 3px 8px #333;
+-webkit-text-size-adjust:none;
+}
+#accordian input {
+display:none;
+}
+#accordian label {
+display:inline-block;
+cursor:pointer;
+background:url(images/plus-sign.png) 0 3px no-repeat;
+padding:0 0 0 17px;
+text-shadow:0 2px 3px #999;
+font-weight:bold;
+}
+#accordian p {
+margin:5px 20px;
+max-height:0;
+overflow:hidden;
+-moz-transition:.75s;-webkit-transition:.75s;-o-transition:.75s;transition:.75s;
+}
+#accordian input:checked + p {
+max-height:220px;
+}
+#accordian input:checked + p:before {
+position:absolute;
+content:'';
+margin:-23px 0 0 -21px;
+height:14px;
+width:14px;
+padding:1px;
+background:#fff url(images/minus-sign.png) 1px 1px no-repeat;
+}
+	
